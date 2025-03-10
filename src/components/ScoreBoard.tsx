@@ -9,13 +9,13 @@ import React, {useEffect, useState} from 'react';
 
 const joakim: PlayerData = {
     id: 1,
-    name: "Joakim",
+    name: "Default name",
     score: 0
 }
 
 const birgitte: PlayerData = {
     id: 2,
-    name: "Birgitte",
+    name: "Default name",
     score: 0
 }
 
@@ -136,7 +136,11 @@ const ScoreBoard = () => {
 
     return (
         <div className="text-center">
-            <h1 className="text-white">ScoreBoard</h1>
+            <h1 className="text-white">Tabla de puntos</h1>
+            <hr></hr>            
+            <p>El que queda primero en una partida gana 3 puntos</p>
+            <p>El que queda segundo gana 2 puntos</p>
+            <p>El que queda tercero gana 1 punto</p>
             <ScoreCard players={players}
                        onChangRemovePlayer={removePlayerHandler}
                        onChangSubstractPlayerScore={substractPlayerScoreHandler}
