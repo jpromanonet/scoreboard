@@ -141,6 +141,12 @@ const ScoreBoard = () => {
             <p>El que queda primero en una partida gana 3 puntos</p>
             <p>El que queda segundo gana 2 puntos</p>
             <p>El que queda tercero gana 1 punto</p>
+            <hr></hr>
+            <h1 className="text-white">Premios</h1>
+            <p>1° premio = 1 día libre</p>
+            <p>2° premio = 1 combo de McDonald's</p>
+            <p>3° premio = 1/4 de helado</p>
+            <hr></hr>
             <ScoreCard players={players}
                        onChangRemovePlayer={removePlayerHandler}
                        onChangSubstractPlayerScore={substractPlayerScoreHandler}
